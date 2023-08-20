@@ -1,0 +1,42 @@
+.parakraff{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+.kate{
+    z-index: 2;
+    position: absolute;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: kao 1s ease-in forwards;
+}
+
+.rongas{
+    border: 1px solid black;
+    width: 49px;
+    border-radius: 50%;
+    height: 49px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    position: absolute;
+    animation: expand 2s ease-in forwards 1s;
+}
+@keyframes kao{
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes expand{
+    100%{
+        transform: scale(40.5);
+    }
+}
