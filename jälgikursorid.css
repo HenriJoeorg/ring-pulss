@@ -1,0 +1,34 @@
+
+.kursor{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    transform-origin: 100% 100%;
+    transition-property: transform, backround;
+    z-index: -1;
+}
+
+.valge{
+    color: white;
+}
+
+.suurenda{
+    transform: scale(2);
+    background-color: black;
+}
+p{
+    margin-left: 300px;
+    margin-top: 200px;
+    display: flex;
+    padding: 2rem;
+    color: black;
+}
+
+body{
+    cursor: none;
+}
